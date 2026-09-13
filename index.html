@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COUNTER</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+<div>
+
+<h1>COUNTER</h1>
+<h1 id="count"> 0</h1>
+<button onclick="i()">increment</button>
+<button onclick="d()">decrement</button>
+<button onclick="r()">reset</button>
+</div>
+<script>
+ var  h1=document.getElementById("count")
+ let score=0
+ function i(){
+  score=score+1
+  h1.textContent=score
+
+ }
+ function d(){
+  score=score-1
+  h1.textContent=score
+
+ }
+ function r(){
+  score=0
+  h1.textContent=score
+ }
+
+</script>
